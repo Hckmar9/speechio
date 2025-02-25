@@ -1,7 +1,8 @@
 # Speechio
+
 <div align="center">
   <a href="#">
-    <img src="speechio.jpg" alt="about-me" width="300" height="200">
+    <img src="speechio-v2.jpg" alt="about-me" width="400" height="300">
   </a>
 </div>
 

@@ -2,27 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speechio v2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Speechio</title>
+    <link rel="icon" type="image/png" href="audio.png" />
   </head>
 
   <body>
-    <div class="wrapper">
-      <header>Text To Audio</header>
-      <form action="">
-        <div class="row">
-          <label>Enter Text</label>
-          <textarea></textarea>
+    <div class="wrapper glassmorphism">
+      <header>
+        <i class="fas fa-microphone-alt icon"></i>
+        <h1>Text to Speech</h1>
+      </header>
+
+      <form>
+        <div class="input-group">
+          <label>Your Text</label>
+          <textarea placeholder="Type or paste your text here..."></textarea>
         </div>
-        <div class="row">
+
+        <div class="input-group">
           <label>Select Voice</label>
-          <div class="outer">
+          <div class="custom-select">
             <select></select>
+            <i class="fas fa-chevron-down select-arrow"></i>
           </div>
         </div>
-        <button>Convert to Speech</button>
+
+        <button class="cta-button">
+          <span>Convert Now</span>
+          <i class="fas fa-play"></i>
+        </button>
+        <!-- This restart the text with a new voice, so that reload not required -->
+        <button type="button" class="cta-button restart-btn">
+          <span>Restart</span>
+          <i class="fas fa-redo"></i>
+        </button>
       </form>
     </div>
 
